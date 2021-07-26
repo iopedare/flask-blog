@@ -1,0 +1,684 @@
+2021-07-24 18:27:25,835 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50
+2021-07-24 18:30:43,426 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50
+2021-07-24 18:43:47,174 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50
+2021-07-24 18:49:45,134 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-24 18:50:00,131 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-24 19:28:37,799 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-24 19:30:49,890 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-24 19:34:17,395 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-25 18:14:52,590 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-25 18:15:26,371 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:15:55,368 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:16:38,033 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:16:53,794 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:38:28,770 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:38:30,254 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:38:33,315 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:39:17,268 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-25 18:39:29,903 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:39:38,448 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:06,689 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:09,942 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:12,740 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:35,567 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:39,434 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:48,043 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:40:55,251 ERROR: Exception on /favicon.ico [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1383, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1323, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 400
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2021-07-25 18:54:19,338 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]
+2021-07-25 20:04:51,474 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:50]

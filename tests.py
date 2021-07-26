@@ -1,14 +1,8 @@
 #!/usr/bin/env python
-import os
-from dotenv import load_dotenv
 from datetime import datetime, timedelta
 import unittest
 from app import app, db
 from app.models import User, Post
-from config import Config
-
-basedir = os.path.abspath(os.path.dirname(__file__))
-load_dotenv(os.path.join(basedir, ".env"))
 
 
 class UserModelCase(unittest.TestCase):
