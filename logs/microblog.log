@@ -1,0 +1,18 @@
+2021-07-27 19:28:14,763 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:54]
+2021-07-27 19:28:29,571 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:54]
+2021-07-28 08:07:45,338 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:71]
+2021-07-28 08:08:35,483 ERROR: Exception on / [GET] [in c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1511, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "c:\users\dayo\desktop\work\django\ustacky\project\microblog\venv\lib\site-packages\flask\app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(func)()
+  File "C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\main\routes.py", line 27, in before_request
+    g.locale = str(get_locale())
+NameError: name 'SearchForm' is not defined
+2021-07-28 08:17:02,189 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:71]
+2021-07-28 09:13:57,483 INFO: Ioped Blog startup [in C:\Users\Dayo\Desktop\Work\Django\UStacky\Project\Microblog\app\__init__.py:73]
